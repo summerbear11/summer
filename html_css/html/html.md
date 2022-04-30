@@ -166,3 +166,158 @@ Ex) www.w3schools.com/html/default.asp
   </tr>
   </table>
 ```
+
+- ul(Unordered List) : 순서없는 목록 -기호로 표시
+- ol(Ordered List) : 순서있는 목록
+  - 숫자로 표시 (알파벳, 한글)
+- li(List Item) : 목록 아이템
+- 중첩목록(Nested List)
+  - 목록안에 작은 목록이 포함되는 경우
+
+```
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JS</li>
+</ul>
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JS</li>
+```
+
+- Description List: 설명목록
+  - dl(Description List)
+  - dt(Description title)
+  - dd(Description Data)
+
+  ```
+  <dl>
+    <dt>목록 주제</dt>
+    <dd>목록 설명</dd>
+  </dl>
+  ```
+
+### HTML Image
+
+- img
+- src(source) : 이미지 파일 경로/ 파일명 표시
+- alt(ernative) : 대체 텍스트
+
+```
+<img src="www.naver.com/html/photo.jpg" alt="이미지 설명">
+```
+
+- 이미지 형식
+  - 비트맵(포토샵), 벡터(일러스트레이터) 이미지
+  - 비트맵 이미지 형식
+    - jpg : 사진
+    - png : 투명 배경
+    - gif : 용량이 작음 - 로고에 사용, 애니메이션
+  - 벡터 이미지
+    - svg
+
+### HTML 
+
+- video
+  - 이름만 사용하는 attribute는 on/off 기능 형태이다. 따옴표 = 을 사용하지 않는다. 
+  - controls : 재생 컨트롤을 화면에 표시
+  - autoplay : 자동 재생
+  - muted : 소리 제거
+  - loop : 반복 재생
+  - poster : 썸네일
+
+```
+<video>
+  <source src="url" type="vidow/mp4">
+</video>
+```
+
+### Youtube video
+
+- option, parameter(매개변수)
+
+https://developers.google.com/youtube/player_parameters?hl=ko#autoplay
+
+```
+<iframe src="youtube-url?parameter1=0&parameter2=1&parameter3=0"></iframe>
+```
+
+
+### 콘텐츠 강조
+
+- 제목의 역할까지는 아니지만 중요, 강조의미를 가진 텍스트 표시
+
+- em(pasized)
+- strong
+-mark
+
+```
+strong > mark > em
+```
+
+### 그 밖의 Text Element
+
+-b(old)
+-i(talic)
+
+## HTML Structure
+
+### Semantic Element
+
+- grouping 또는 구분하는 Element를 의미있게 사용
+- 의미있는 grouping Element가 추가
+- Contents Element와 Semantic Element를 목적에 맞게 제대로 구성하는 것이
+  검색엔진(SEO:Search Engine Optimization)에 웹사이트 관련 정보를 잘 노출시킬 수 있는 방법중 하나이다. 
+
+- header
+  - 소개 콘텐츠(loge...), 탐색링크(상단메뉴, 검색바), 로그인, 언어선택...
+
+- nav(igation)
+  - 메뉴
+
+- section
+  - 제목, 내용으로 구성된 하나의 영역
+
+- article
+  - 독립적인 글 또는 콘텐츠
+
+- aside
+  - 부수적인 콘텐츠 영역
+
+- footer
+  - 연락처
+  - 사이트 맵
+  - 저작권
+  - 연관 링크
+
+- figure
+  - embeded contents 또는 그림형태의 콘텐츠 
+
+  ### Container Element
+
+  - 단순 구역 나누는 / grouping 하는 요소
+  - div(ision)
+  - span
+
+## Block & Inline
+
+- 구역을 구분하는 Semantic Element, Container Element 뿐만 아니라 Contents를
+표현하는 Element도 화면에 영역으로 표시됨. 
+
+### Block Element
+
+- 요소의 영역이 부모요소를 기준으로 가능한 최대 너비로 채워짐
+- 요소와 요소는 줄바꿈되어 새 줄에 표시됨
+
+### Inline Element
+
+- 요소의 영역이 Contents 또는 자식요소를 기준으로 맞춰짐
+- 요소와 요소는 한 줄에 나란히 표시가 됨
+
+## head 태그
+
+- meta :웹사이트 추가 정보
+- title : 웹사이트 대표 제목 
+- link, script : css, js 파일 불러올 때 사용
+- style, script : css, js 코드를 직접 사용할 때 사용
